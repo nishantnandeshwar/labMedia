@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Navbar</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h3>Your App Title</h3>
+  </header>
+<nav>
+    <ul>
+        <li><a href="#" onclick="loadPage(`./src/home/home.html`)">Home</a></li>
+        <li><a href="#" onclick="loadPage(`./src/about/about.html`)">About</a></li>
+        <li><a href="#" onclick="loadPage(`./src/contact/contact.html`)">Contact</a></li>
+    </ul>
+</nav>
+
+<div id="content">
+    <!-- Content will be dynamically loaded here -->
+</div>
+<footer>
+  <p>Company Name</p>
+  <p>Contact Details: contact@example.com</p>
+</footer>
+<script src="script.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
